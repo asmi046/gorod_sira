@@ -144,3 +144,353 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
+._container {
+    width:1440px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #fff;
+    background-color: #91B508;
+    border: 1px solid #91B508;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0 20px;
+    transition: all .4s ease;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    min-height: 35px;
+    line-height: 35px;
+    display: inline-block;
+}
+
+.btn_empty {
+    background-color: white;
+    color: #91B508;
+}
+
+section {
+    width:100%;
+    padding: 30px 0;
+}
+
+section h2{
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Шапка сайта */
+
+header {
+    padding:0 10%;
+    display: flex;
+    height: 80px;
+    position: relative;
+    -webkit-box-shadow: 0px 5px 10px -6px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px -6px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px -6px rgba(34, 60, 80, 0.2);
+}
+
+header > *{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header .main_menu {
+    margin-left: 0;
+}
+
+.main_menu {
+    display: flex;
+
+}
+
+header .contact_blk_head {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.main_menu li a{
+    margin-right: 30px;
+}
+
+.logo {
+    width:187px;
+    height:150px;
+    background-image: url(../img/logo.svg);
+    position: absolute;
+    top: 5px;
+    left:calc(50% - 94px);
+    z-index: 111;
+}
+
+.phone_head {
+    position: relative;
+    padding-left: 20px;
+}
+
+.phone_head:before {
+    content: "\2022";
+    color: #91B508;
+    font-size: 24px;
+    position: absolute;
+    left:0;
+    top:-1px;
+
+}
+
+/* Шапка сайта end */
+
+/* Баннер на главной */
+
+.main_banner {
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/banner_main.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+
+.main_banner ._container{
+    color:white;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.main_banner ._container span{
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    width:400px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main_banner ._container h1{
+    font-size: 72px;
+    width:400px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.main_banner ._container .btn{
+    display: inline-block;
+}
+
+/* Баннер на главной end */
+
+/* Блок о компании */
+
+.about_main ._container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_main ._container .photo_blk{
+    width:40%;
+}
+
+.about_main ._container .text_blk .inner_text{
+    margin: auto 0;
+}
+
+.about_main ._container .text_blk .inner_text p{
+    margin: 1.5em 0;
+}
+
+.about_main ._container .text_blk{
+    width:57%;
+    margin-left: 3%;
+    display:flex;
+}
+
+/* Блок о компании end */
+
+/* Блок преимуществ */
+
+.advantages_main {
+    background-color: #e4e3e1;
+    height: 900px;
+    background-image: url(../img/advantages_bg_left.webp), url(../img/advantages_bg_right.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.advantages_main p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.advantages_main hr{
+    width:170px;
+    height: 2px;
+    border: none;
+    background-color: #91B508;
+    margin: 0 auto 30px auto;
+ }
+
+ .advantages_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+ }
+
+ .advantages_list .adv{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .advantages_list .adv > *{
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .advantages_list .adv .icon_blk{
+    width:180px;
+    height: 180px;
+    background-color: #91B508;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+ }
+
+ .advantages_list .adv .icon_blk.icon_adv_1 {
+    background-image: url(../img/icon/adv_icon_1.svg);
+ }
+
+
+ .advantages_list .adv .icon_blk.icon_adv_2 {
+    background-image: url(../img/icon/adv_icon_2.svg);
+ }
+
+ .advantages_list .adv .icon_blk.icon_adv_3 {
+    background-image: url(../img/icon/adv_icon_3.svg);
+ }
+
+ .advantages_list .adv .icon_blk.icon_adv_4 {
+    background-image: url(../img/icon/adv_icon_4.svg);
+ }
+
+ .advantages_list .adv .icon_blk.icon_adv_5 {
+    background-image: url(../img/icon/adv_icon_5.svg);
+ }
+
+ .advantages_list .adv h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+ }
+
+ .advantages_list .adv hr {
+    width: 40px;
+ }
+
+/* Блок преимуществ end */
+
+/* Блок наше производство  */
+
+
+.pg_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gal_left_side {
+    width:40%
+}
+
+.gal_right_side {
+    width:60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gal_right_side img:nth-child(1),
+.gal_right_side img:nth-child(2){
+    margin-top: 0;
+}
+
+.gal_right_side img:nth-child(3),
+.gal_right_side img:nth-child(4){
+    margin-bottom: 0;
+}
+
+.gal_right_side img{
+    width:46%;
+    margin: 2%;
+    height: auto;
+}
+
+/* Блок наше производство end */
+
+/* Блок каталога на главной */
+.catalog_main .btn_blk{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cat_list_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat_list_main .cat_card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cat_list_main .cat_card .name{
+    background-color: #91B508;
+    color: white;
+    height: 74px;
+    line-height: 74px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Блок каталога на главной end */
+
+
+/* Подвал */
+
+footer ._container {
+    display: flex;
+    height: 140px;
+    justify-content: space-between;
+}
+
+.foooter_in_main ._container{
+    border-top: 2px solid #91B508;
+}
+
+.foooter_in_main ._container > *{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.foooter_in_main ._container .logo{
+    position: relative;
+    left: unset;
+    top: unset;
+    width:133px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Подвал end */
