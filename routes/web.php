@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,4 @@ use App\Http\Controllers\IndexController;
 |
 */
 Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/products', [ProductController::class, 'index'])->name('products');
