@@ -559,6 +559,30 @@ footer ._container {
 
 /* Страница продукции end */
 
+/* Страница категории продукции */
+
+.product_cat_list .product_cat_t {
+    width:22%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
+    -moz-box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
+    box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
+}
+
+.product_cat_list .product_cat_t .img_wrap{
+    max-height: 260px;
+}
+
+.product_cat_list .product_cat_t .img_wrap img{
+    object-fit: contain;
+}
+
+/* Страница категории продукции end */
+
 /* Хлебные крошки */
 
 .breadcrumbs {
