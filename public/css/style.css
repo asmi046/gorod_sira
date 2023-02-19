@@ -786,13 +786,22 @@ footer ._container {
     .main_banner {
         height: 600px;
     }
+
+    .bn_in_product_page .milk_layer {
+        background-position: bottom center;
+        background-size: contain;
+    }
+
+    .bn_in_product_page {
+        height: auto;
+    }
 }
 
 @media (max-width: 1024px){
     header {
         position: sticky;
         top:0;
-        z-index: 1000;
+        z-index: 10000;
         background-color: white;
     }
     header .main_menu {
@@ -814,6 +823,14 @@ footer ._container {
 
     .advantages_main {
         background-image: url(../img/advantages_bg_left.webp);
+    }
+
+    .product_cat_list .product_cat {
+        width:32%
+    }
+
+    .product_cat_list .product_cat_t {
+        width:48%
     }
 }
 
@@ -902,6 +919,18 @@ footer ._container {
     .foooter_in_main ._container .contact_blk_head{
         margin: 10px auto;
     }
+
+    .bn_in_product_page {
+        padding: 0;
+    }
+
+    .prodct_page_blk {
+        flex-direction: column;
+    }
+
+    .prodct_page_blk .right {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 480px){
@@ -933,5 +962,18 @@ footer ._container {
 
     .main_banner {
         height: 300px;
+    }
+
+    .product_cat_list .product_cat {
+        width: 100%;
+    }
+
+    .product_cat_list .product_cat_t {
+        width: 100%;
+    }
+
+    .product_cat_list .product_cat_t .upac,
+    .product_cat_list .product_cat_t h2 {
+        padding: 0 20px;
     }
 }
