@@ -1,4 +1,4 @@
-@extends('layouts.all')
+@extends('layouts.all', ['no_footer_line' => true])
 
 @php
     $title = "Категория товара";
@@ -19,25 +19,23 @@
 
             <h1 class="h1_pahe">Масло сливочное фасованное</h1>
 
+            <div class="cat_select_in_page">
+                <a href="" class="cat_element active">Сыры полутвердые весовые</a>
+                <a href="" class="cat_element">Сыры фасованные</a>
+                <a href="" class="cat_element">Сыры твердые весовые</a>
+                <a href="" class="cat_element">Сыр плавленный фасованный</a>
+                <a href="" class="cat_element">Масло сливочное фасованное</a>
+                <a href="" class="cat_element">Масло сливочное с наполнителями фасованное</a>
+                <a href="" class="cat_element">Масло сливочное с наполнителям весовое</a>
+            </div>
+
             <div class="product_cat_list">
                 @for ($i = 0; $i<8; $i++)
-                    <div class="product_cat_t">
-                        <div class="img_wrap">
-                            <img src="{{asset('facer/product_1.jpg')}}" alt="">
-                        </div>
-                        <h2>Cладко-сливочное традиционнное</h2>
-                        <div class="upac">
-                            — Фольга 180 г
-                        </div>
-                        <div class="text">
-                            Приготовлено в лучших финских традициях из натуральных пастеризованных сливок. Продукт богат витаминами и минеральными веществами и отличается нежным ...
-                        </div>
-                    </div>
+                    <x-product-card></x-product-card>
                 @endfor
 
             </div>
         </div>
-
     </section>
 
     <x-advantages></x-advantages>

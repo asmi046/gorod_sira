@@ -1,5 +1,5 @@
 
-@extends('layouts.all')
+@extends('layouts.all', ['no_footer_line' => false])
 
 @php
     $title = "Производство сыра и молочьных продуктов";
@@ -71,7 +71,9 @@
                     <div class="img_blk">
                         <img src="{{asset('img/catalog/cat_main_1.jpg')}}" alt="">
                     </div>
-                    <div class="name">Сыры фасованые</div>
+                    <div class="name">
+                        <h3>Сыры фасованые</h3>
+                    </div>
                 </div>
 
 
@@ -79,31 +81,27 @@
                     <div class="img_blk">
                         <img src="{{asset('img/catalog/cat_main_2.jpg')}}" alt="">
                     </div>
-                    <div class="name">Сыры весовые</div>
+                    <div class="name">
+                        <h3>Сыры весовые</h3>
+                    </div>
                 </div>
 
                 <div class="cat_card">
                     <div class="img_blk">
                         <img src="{{asset('img/catalog/cat_main_3.jpg')}}" alt="">
                     </div>
-                    <div class="name">Масло сливочное фасованное</div>
+                    <div class="name">
+                        <h3>Масло сливочное фасованное</h3>
+                    </div>
                 </div>
             </div>
 
             <div class="btn_blk">
-                <a href="" class="btn btn_empty">Весь каталог</a>
+                <a href="" class="btn btn_empty">
+                    Весь каталог
+                </a>
             </div>
         </div>
     </section>
-
-    <footer class="foooter_in_main">
-        <div class="_container">
-            <x-logo></x-logo>
-            <x-menu-puncts></x-menu-puncts>
-            <x-phone></x-phone>
-
-        </div>
-    </footer>
-
 
 @endsection

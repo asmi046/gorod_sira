@@ -1,4 +1,4 @@
-@extends('layouts.all')
+@extends('layouts.all', ['no_footer_line' => true])
 
 @php
     $title = "Производство сыра и молочьных продуктов";
@@ -7,6 +7,7 @@
 
 @section('title', $title)
 @section('description', $description)
+
 
 @section('content')
     <section class="bn_in_product_page">

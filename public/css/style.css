@@ -66,7 +66,6 @@ html {
 
 html,
 body {
-  height: 100%;
   min-width: 320px;
   font-family: "Lato";
   font-weight: normal;
@@ -189,6 +188,15 @@ section h2{
     margin-bottom: 30px;
 }
 
+
+@media (max-width: 1440px){
+    ._container {
+        width:96%;
+        margin: 0 2%;
+    }
+}
+
+
 /* Шапка сайта */
 
 header {
@@ -245,9 +253,16 @@ header .contact_blk_head {
     font-size: 24px;
     position: absolute;
     left:0;
-    top:-1px;
-
+    top:0;
+    line-height: 0.75;
 }
+
+@media (max-width: 1440px){
+    header {
+        padding: 0 2%;
+    }
+}
+
 
 /* Шапка сайта end */
 
@@ -260,6 +275,7 @@ header .contact_blk_head {
     background-image: url(../img/banner_main.jpg);
     background-size: cover;
     display: flex;
+    background-position: center;
 }
 
 
@@ -288,6 +304,8 @@ header .contact_blk_head {
 .main_banner ._container .btn{
     display: inline-block;
 }
+
+
 
 /* Баннер на главной end */
 
@@ -468,6 +486,13 @@ header .contact_blk_head {
     font-weight: 700;
 }
 
+
+@media (max-width: 1440px){
+    .cat_list_main .cat_card {
+        width:32%
+    }
+}
+
 /* Блок каталога на главной end */
 
 
@@ -479,6 +504,9 @@ footer ._container {
     justify-content: space-between;
 }
 
+.foooter_in_main.noborder ._container{
+    border-top:  none;
+}
 .foooter_in_main ._container{
     border-top: 2px solid #91B508;
 }
@@ -571,6 +599,8 @@ footer ._container {
     -webkit-box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
     -moz-box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
     box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
+
+    text-align: center;
 }
 
 .product_cat_list .product_cat_t .img_wrap{
@@ -581,7 +611,109 @@ footer ._container {
     object-fit: contain;
 }
 
+.product_cat_list .product_cat_t h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #669824;
+}
+
+.product_cat_list .product_cat_t .upac{
+    font-size: 18px;
+    color:#8C8B8B;
+    margin-bottom: 20px;
+}
+
+.product_cat_list .product_cat_t .text{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.cat_select_in_page {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cat_select_in_page .cat_element{
+    padding: 10px 15px;
+    border: 1px solid #669824;
+    border-radius: 30px;
+    margin: 0 20px 20px 0;
+}
+
+.cat_select_in_page .cat_element:hover,
+.cat_select_in_page .cat_element.active{
+    background-color: #669824;
+    color: white;
+}
+
 /* Страница категории продукции end */
+
+/* Страница продукта */
+
+/* Страница продукта end */
+
+.big_pd {
+    padding-top: 100px;
+}
+
+.prodct_page_blk {
+    display: flex;
+}
+
+.prodct_page_blk .right {
+    margin-left: 5%;
+}
+
+.prodct_page_blk .right h1{
+    font-size: 40px;
+}
+
+.prodct_page_blk .right .description{
+    padding:  1em 0;
+}
+
+.prodct_page_blk .right .property{
+    margin: 20px 0;
+    color: #669824;
+    font-size: 18px;
+}
+
+.prodct_page_blk .right .ppInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.prodct_page_blk .right .ppInfo .ppInfo_line{
+    padding: 10px 0;
+    border-bottom: 1px solid #6698243a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodct_page_blk .right .ppInfo .ppInfo_line p{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.prodct_page_blk .right .ppInfo .ppInfo_line .arrow{
+    width:17px;
+    height: 8px;
+    margin: auto 0 auto auto;
+    background-image: url(../img/icon/arrow_prop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prodct_page_blk .pp_blk {
+    flex:1;
+}
+
+.upsale .product_cat_list{
+    margin-top: 50px;
+}
 
 /* Хлебные крошки */
 
@@ -590,3 +722,216 @@ footer ._container {
 }
 
 /* Хлебные крошки end */
+
+/* Иконка мобильного меню */
+
+.icon-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 31.8px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31.8px;
+    flex: 0 0 31.8px;
+    height: 23.2px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+}
+.icon-menu span {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #7EAF00;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .icon-menu span:first-child {
+    top: 0px;
+  }
+
+  .icon-menu span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+
+  .icon-menu.active span {
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .icon-menu.active span:first-child {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  .icon-menu.active span:last-child {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 12px;
+  }
+
+/* Иконка мобильного меню end */
+
+
+
+@media (max-width: 1330px){
+    .main_banner {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1024px){
+    header {
+        position: sticky;
+        top:0;
+        z-index: 1000;
+        background-color: white;
+    }
+    header .main_menu {
+        order: 2;
+    }
+    header .logo {
+        order: 1;
+        position: relative;
+        top:unset;
+        left: unset;
+        height:84%;
+        background-size: contain;
+        background-repeat:  no-repeat;
+
+    }
+    header .contact_blk_head {
+        order:3;
+    }
+
+    .advantages_main {
+        background-image: url(../img/advantages_bg_left.webp);
+    }
+}
+
+@media (max-width: 812px){
+    .advantages_main {
+        height: auto;
+    }
+
+    .advantages_list {
+        flex-wrap: wrap;
+    }
+
+    .advantages_list .adv {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    header .main_menu {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+        order: 3;
+        margin-left: 30px;
+    }
+
+    .main_banner {
+        height: 400px;
+    }
+
+    .main_banner ._container span {
+        font-size: 38px;
+    }
+
+    .main_banner ._container h1 {
+        font-size: 52px;
+    }
+
+    .about_main ._container {
+        flex-direction: column;
+    }
+
+    .about_main ._container .text_blk,
+    .about_main ._container .photo_blk {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about_main ._container .photo_blk img {
+        width:50%;
+    }
+
+    .cat_list_main .cat_card .name {
+        height: 54px;
+        line-height: 1;
+        display: flex;
+    }
+
+    .cat_list_main .cat_card .name h3{
+        margin: auto;
+    }
+
+    .foooter_in_main ._container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .foooter_in_main ._container .logo{
+        margin: 20px auto;
+        min-height: 80px;
+    }
+
+    .foooter_in_main ._container .main_menu{
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foooter_in_main ._container .main_menu a{
+        margin: 5px 0;
+        display: block;
+    }
+
+    .foooter_in_main ._container .contact_blk_head{
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px){
+    .advantages_list .adv {
+        width: 48%;
+    }
+
+    .advantages_main p {
+        width:100%;
+    }
+
+    header .logo {
+        width:100px
+    }
+
+    .advantages_main {
+        background-image: url(../img/advantages_bg_left.webp), url(../img/advantages_bg_right.webp);
+        background-size: 100%;
+    }
+
+    .cat_list_main {
+        flex-direction: column;
+    }
+
+    .cat_list_main .cat_card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main_banner {
+        height: 300px;
+    }
+}

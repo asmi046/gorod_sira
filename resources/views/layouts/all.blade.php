@@ -42,18 +42,17 @@
         <x-logo></x-logo>
 
         <x-phone></x-phone>
+
+        <div class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     @yield('content')
 
 
-    <footer class="foooter_in_main">
-        <div class="_container">
-            <x-logo></x-logo>
-            <x-menu-puncts></x-menu-puncts>
-            <x-phone></x-phone>
-
-        </div>
-    </footer>
+    <x-footer :line="$no_footer_line"></x-footer>
 </body>
 </html>
