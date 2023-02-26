@@ -48,8 +48,8 @@ class ProductSeeder extends Seeder
                 }
 
                 // var_dump($main_data);
-                DB::table("                                                                                                                                                                                                                                                                                                            ")->insert($main_data);
+                DB::table("kvartiras")->insert($main_data);
             }
-        }
     }
 }
+
