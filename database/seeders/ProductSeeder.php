@@ -32,6 +32,10 @@ class ProductSeeder extends Seeder
                     if (!empty($data[17]))
                         Storage::disk('public')->put($data[17], file_get_contents(public_path('base/tovar_foto/'.$data[17])), 'public');
 
+
+
+                    $cat_name = trim(iconv("windows-1251", "utf-8", $data[0]));
+
                     $main_data[] =
                         [
 
@@ -49,7 +53,7 @@ class ProductSeeder extends Seeder
                             'param_count_in_pack' => trim(iconv("windows-1251", "utf-8", $data[9])),
                             'param_srok_realiz' => trim(iconv("windows-1251", "utf-8", $data[10])),
 
-                            'category' => trim(iconv("windows-1251", "utf-8", $data[0])),
+                            'category' => $cat_name,
                             'img' => Storage::url($data[17]),
                             'description' => trim(iconv("windows-1251", "utf-8", $data[0]))." - ".trim(iconv("windows-1251", "utf-8", $data[2])),
 
@@ -64,7 +68,6 @@ class ProductSeeder extends Seeder
 
                             'seo_title' => trim(iconv("windows-1251", "utf-8", $data[2])),
                             'seo_description' => trim(iconv("windows-1251", "utf-8", $data[0]))." - ".trim(iconv("windows-1251", "utf-8", $data[2])),
-
                         ];
 
                         $row++;

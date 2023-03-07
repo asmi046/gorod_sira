@@ -17,5 +17,5 @@ use App\Http\Controllers\ProductController;
 */
 Route::get('/', [IndexController::class, 'index'])->name('home');
 Route::get('/products', [ProductController::class, 'index'])->name('products');
-Route::get('/products/cat', [ProductController::class, 'show_cat'])->name('product_cat');
+Route::get('/products/{slug}', [ProductController::class, 'show_cat'])->name('product_cat');
 Route::get('/products/pp', [ProductController::class, 'show_product_page'])->name('product_page');

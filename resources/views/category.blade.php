@@ -20,13 +20,11 @@
             <h1 class="h1_pahe">Масло сливочное фасованное</h1>
 
             <div class="cat_select_in_page">
-                <a href="" class="cat_element active">Сыры полутвердые весовые</a>
-                <a href="" class="cat_element">Сыры фасованные</a>
-                <a href="" class="cat_element">Сыры твердые весовые</a>
-                <a href="" class="cat_element">Сыр плавленный фасованный</a>
-                <a href="" class="cat_element">Масло сливочное фасованное</a>
-                <a href="" class="cat_element">Масло сливочное с наполнителями фасованное</a>
-                <a href="" class="cat_element">Масло сливочное с наполнителям весовое</a>
+                @foreach ($categories as $item)
+                    <a href="" @class(['cat_element', 'active' => ($item->slug === $catinfo->slug)]) >{{$item->title}}</a>
+                @endforeach
+
+
             </div>
 
             <div class="product_cat_list">

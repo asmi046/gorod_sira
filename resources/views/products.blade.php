@@ -24,16 +24,9 @@
             <h1 class="h1_pahe">Продукция</h1>
 
             <div class="product_cat_list">
-                @for ($i = 0; $i<8; $i++)
-                    <div class="product_cat">
-                        <div class="img_wrap">
-                            <img src="{{asset('img/product_tmp_img.webp')}}" alt="">
-                        </div>
-                        <div class="text">
-                            Сыры полутвердые весовые
-                        </div>
-                    </div>
-                @endfor
+                @foreach ($categories as $item)
+                    <x-product-cat-card :item="$item"></x-product-cat-card>
+                @endforeach
 
             </div>
         </div>
