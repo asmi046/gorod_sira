@@ -8,6 +8,7 @@ use Illuminate\Database\Seeder;
 use DB;
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 
 class ProductSeeder extends Seeder
@@ -28,7 +29,8 @@ class ProductSeeder extends Seeder
                     if ($row == 0) {$row++; continue;}
                     if (empty($data[0])) break;
 
-                    // Storage::disk('public')->put($data[0].".svg", file_get_contents(public_path('planes/'.$data[0].'.svg')), 'public');
+                    if (!empty($data[17]))
+                        Storage::disk('public')->put($data[17], file_get_contents(public_path('base/tovar_foto/'.$data[17])), 'public');
 
                     $main_data[] =
                         [
@@ -48,7 +50,7 @@ class ProductSeeder extends Seeder
                             'param_srok_realiz' => trim(iconv("windows-1251", "utf-8", $data[10])),
 
                             'category' => trim(iconv("windows-1251", "utf-8", $data[0])),
-                            'img' => trim(""),
+                            'img' => Storage::url($data[17]),
                             'description' => trim(iconv("windows-1251", "utf-8", $data[0]))." - ".trim(iconv("windows-1251", "utf-8", $data[2])),
 
                             'price_D_ht' => floatval(trim($data[11])),
@@ -63,21 +65,6 @@ class ProductSeeder extends Seeder
                             'seo_title' => trim(iconv("windows-1251", "utf-8", $data[2])),
                             'seo_description' => trim(iconv("windows-1251", "utf-8", $data[0]))." - ".trim(iconv("windows-1251", "utf-8", $data[2])),
 
-                            // 'type' => $type,
-                            // 'number' => floatval($data[0]),
-                            // 'price' => floatval($data[6]),
-                            // 'price_metr' => floatval($data[7]),
-                            // 'view' => iconv("windows-1251", "utf-8", $data[8]),
-                            // 'podezd' => iconv("windows-1251", "utf-8", $data[9]),
-                            // 'area' => floatval($data[2]),
-                            // 'area_live' => floatval($data[3]),
-                            // 'flor' => intval($data[5]),
-                            // 'rooms' => intval($rooms),
-                            // 'plan_img' => Storage::url($data[0].".svg"),
-                            // 'home_1_img' => Storage::url("home_v_1.jpg"),
-                            // 'home_2_img' => Storage::url("home_v_2.jpg"),
-                            // 'koridor_img' => "",
-                            // 'home_id' => 1,
                         ];
 
                         $row++;
