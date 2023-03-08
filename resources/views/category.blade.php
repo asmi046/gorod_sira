@@ -21,16 +21,17 @@
 
             <div class="cat_select_in_page">
                 @foreach ($categories as $item)
-                    <a href="" @class(['cat_element', 'active' => ($item->slug === $catinfo->slug)]) >{{$item->title}}</a>
+                    <a href="{{route('product_cat', $item->slug)}}" @class(['cat_element', 'active' => ($item->slug === $catinfo->slug)]) >{{$item->title}}</a>
                 @endforeach
 
 
             </div>
 
             <div class="product_cat_list">
-                @for ($i = 0; $i<8; $i++)
-                    <x-product-card></x-product-card>
-                @endfor
+                @foreach ($catinfo->cat_product as $item)
+                    <x-product-card :item="$item"></x-product-card>
+                @endforeach
+
 
             </div>
         </div>

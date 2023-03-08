@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
                             'param_srok_realiz' => trim(iconv("windows-1251", "utf-8", $data[10])),
 
                             'category' => $cat_name,
-                            'img' => Storage::url($data[17]),
+                            'img' => (!empty($data[17]))?Storage::url($data[17]):"",
                             'description' => trim(iconv("windows-1251", "utf-8", $data[0]))." - ".trim(iconv("windows-1251", "utf-8", $data[2])),
 
                             'price_D_ht' => floatval(trim($data[11])),
