@@ -9,10 +9,6 @@ use App\Models\Category;
 class ProductController extends Controller
 {
 
-    public function show_product_page() {
-        return view('productpage');
-    }
-
     public function show_cat($slug) {
         $cat_info = Category::where('slug', $slug)->first();
 

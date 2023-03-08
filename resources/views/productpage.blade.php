@@ -21,21 +21,27 @@
             <div class="prodct_page_blk">
                 <div class="pp_blk left">
                     <div class="pp_img_wrapper">
-                        <img src="{{asset('facer/product_in_page.jpg')}}" alt="">
+                        <img src="{{empty($productinfo->img)?asset('img/no-photo.jpg'):$productinfo->img }}" alt="">
                     </div>
                 </div>
 
                 <div class="pp_blk right">
-                    <h1 class="h1_pahe">Cладко-сливочное традиционнное</h1>
+                    <h1 class="h1_pahe">{{$productinfo->title}}</h1>
                     <ul class="property">
-                        <li>— Фольга 180 г</li>
+                        <li>— {{$productinfo->upacovka}} {{$productinfo->param_ves_ed}} г</li>
                     </ul>
 
                     <p class="description">
-                        Приготовлено в лучших финских традициях из натуральных пастеризованных сливок. Продукт богат витаминами и минеральными веществами и отличается нежным вкусом и легким сливочным ароматом. При изготовлении не используются искусственные добавки. Для особых гурманов – кислосливочное и соленое масло Тысяча озёр! Свежая булочка и кусочек масла "Тысяча озёр" - вкусное начало вашего утра!
+                        {{$productinfo->description}}
                     </p>
 
                     <div class="ppInfo">
+                        <acordion-element>
+                            <template v-slot:acheader>
+                                <p>Тест</p>
+                            </template>
+                        </acordion-element>
+
                         <div class="ppInfo_line">
                             <p>Производство</p>
                             <span class="arrow"></span>
@@ -65,9 +71,9 @@
         <div class="_container">
             <h2>Смотрите также</h2>
             <div class="product_cat_list">
-                @for ($i = 0; $i<4; $i++)
+                {{-- @for ($i = 0; $i<4; $i++)
                     <x-product-card></x-product-card>
-                @endfor
+                @endfor --}}
             </div>
         </div>
     </section>
