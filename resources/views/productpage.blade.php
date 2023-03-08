@@ -36,31 +36,130 @@
                     </p>
 
                     <div class="ppInfo">
-                        <acordion-element>
+                        <acordion-element :sopen="true">
                             <template v-slot:acheader>
-                                <p>Тест</p>
+                                <p>Параметры</p>
+                            </template>
+
+                            <template v-slot:accontent>
+                                <ul class="tovar_caracter">
+                                    <li>
+                                        <span class="pname">Категория</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->category}}</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Торговая марка</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->tm}}</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Жирность</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_zgirnost}}</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Срок годности</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_srok_realiz}} дней.</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Штрихкод</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_scode}}</span>
+                                    </li>
+                                </ul>
                             </template>
                         </acordion-element>
 
-                        <div class="ppInfo_line">
-                            <p>Производство</p>
-                            <span class="arrow"></span>
-                        </div>
+                        <acordion-element>
+                            <template v-slot:acheader>
+                                <p>Упаковка и вес</p>
+                            </template>
 
-                        <div class="ppInfo_line">
-                            <p>Особенности</p>
-                            <span class="arrow"></span>
-                        </div>
+                            <template v-slot:accontent>
+                                <ul class="tovar_caracter">
+                                    <li>
+                                        <span class="pname">Вид упаковки</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->upacovka}}</span>
+                                    </li>
 
-                        <div class="ppInfo_line">
-                            <p>Польза для организма</p>
-                            <span class="arrow"></span>
-                        </div>
+                                    <li>
+                                        <span class="pname">Вес единицы продукции</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_ves_ed}} г.</span>
+                                    </li>
 
-                        <div class="ppInfo_line">
-                            <p>Возможности в кулинарии</p>
-                            <span class="arrow"></span>
-                        </div>
+                                    <li>
+                                        <span class="pname">Вес ящика продукции</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_ves_yashik}} г.</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Количество в упаковке</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_count_in_pack}} шт.</span>
+                                    </li>
+                                </ul>
+                            </template>
+                        </acordion-element>
+
+                        <acordion-element>
+                            <template v-slot:acheader>
+                                <p>Цены</p>
+                            </template>
+
+                            <template v-slot:accontent>
+                                <ul class="tovar_caracter">
+                                    <li>
+                                        <span class="pname">Цена дистрибютер за штуку</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->price_D_ht}} ₽</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Цена дистрибютер за кг</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->price_D_kg}} ₽</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Цена опт за штуку</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_ves_yashik}} ₽</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Цена опт за кг</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->param_count_in_pack}} ₽</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Цена розница за штуку</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->price_R_ht}} ₽</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="pname">Цена розница за кг</span>
+                                        <span class="sep"></span>
+                                        <span class="pvalue">{{$productinfo->price_R_kg}} ₽</span>
+                                    </li>
+                                </ul>
+                            </template>
+                        </acordion-element>
+
+
+
+
+
                     </div>
                 </div>
             </div>

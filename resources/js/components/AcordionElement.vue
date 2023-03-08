@@ -17,10 +17,17 @@ export default {
         }
     },
 
+    props:['sopen'],
+
     methods:{
         showList() {
             this.open = !this.open
         }
+    },
+
+    mounted: function () {
+        if (this.sopen == true)
+          this.open = true;
     }
 
 }

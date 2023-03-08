@@ -670,6 +670,7 @@ footer ._container {
 
 .prodct_page_blk {
     display: flex;
+    margin-top: 30px;
 }
 
 .prodct_page_blk .right {
@@ -725,8 +726,35 @@ footer ._container {
     flex:1;
 }
 
+.prodct_page_blk .pp_blk .pp_img_wrapper{
+    box-shadow: 0px 1px 8px 9px rgb(34 60 80 / 5%);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.prodct_page_blk .pp_blk .pp_img_wrapper img{
+    width:80%;
+    margin: auto;
+}
+
 .upsale .product_cat_list{
     margin-top: 50px;
+}
+
+.tovar_caracter li {
+    display: flex;
+    margin: 10px 0;
+}
+
+.tovar_caracter li .sep{
+    flex:1;
+    border-bottom: 1px dotted lightgray;
+    margin: 0 4px;
+}
+
+.tovar_caracter li .pname{
+    font-weight: 600;
 }
 
 /* Хлебные крошки */
