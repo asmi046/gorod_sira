@@ -170,9 +170,9 @@
         <div class="_container">
             <h2>Смотрите также</h2>
             <div class="product_cat_list">
-                {{-- @for ($i = 0; $i<4; $i++)
-                    <x-product-card></x-product-card>
-                @endfor --}}
+                @foreach ($upsale as $item)
+                    <x-product-card :item="$item"></x-product-card>
+                @endforeach
             </div>
         </div>
     </section>

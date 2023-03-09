@@ -736,6 +736,7 @@ footer ._container {
 .prodct_page_blk .pp_blk .pp_img_wrapper img{
     width:80%;
     margin: auto;
+    padding: 20px 0;
 }
 
 .upsale .product_cat_list{
