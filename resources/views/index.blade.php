@@ -66,38 +66,17 @@
         <div class="_container">
             <h2>Каталог продукции</h2>
 
-            <div class="cat_list_main">
-                <div class="cat_card">
-                    <div class="img_blk">
-                        <img src="{{asset('img/catalog/cat_main_1.jpg')}}" alt="">
-                    </div>
-                    <div class="name">
-                        <h3>Сыры фасованые</h3>
-                    </div>
-                </div>
 
 
-                <div class="cat_card">
-                    <div class="img_blk">
-                        <img src="{{asset('img/catalog/cat_main_2.jpg')}}" alt="">
-                    </div>
-                    <div class="name">
-                        <h3>Сыры весовые</h3>
-                    </div>
-                </div>
+            <div class="cat_list_main product_cat_list">
+                @foreach ($categories as $item)
+                    <x-product-cat-card :item="$item"></x-product-cat-card>
+                @endforeach
 
-                <div class="cat_card">
-                    <div class="img_blk">
-                        <img src="{{asset('img/catalog/cat_main_3.jpg')}}" alt="">
-                    </div>
-                    <div class="name">
-                        <h3>Масло сливочное фасованное</h3>
-                    </div>
-                </div>
             </div>
 
             <div class="btn_blk">
-                <a href="" class="btn btn_empty">
+                <a href="{{route("products")}}" class="btn btn_empty">
                     Весь каталог
                 </a>
             </div>
