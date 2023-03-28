@@ -17,9 +17,7 @@
 
     <section class="product_page_content">
         <div class="_container">
-            <div class="breadcrumbs">
-                <a href="#">Главная</a> / <span>Продукция</span>
-            </div>
+            <x-breadcrumbs :title="'Продукция'"></x-breadcrumbs>
 
             <h1 class="h1_pahe">Продукция</h1>
 

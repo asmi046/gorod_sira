@@ -5,12 +5,12 @@
         <span class="sep"> / </span> <span class="finish">{{ $title }}</span>
     @endif
 
-    @if (isset($product))
-        <span class="sep"> / <a href="{{route("products")}}">Продукция</a>  / </span> <span class="finish">{{ $product }}</span>
+    @if (isset($category))
+        <span class="sep"> / <a href="{{route("products")}}">Продукция</a>  / </span> <span class="finish">{{ $category }}</span>
     @endif
 
     @if (isset($productpage))
-        <span class="sep"> / <a href="{{route("products")}}">Продукция</a> / <a href="{{route('products_cat', $catslug)}}">{{$cattitle}}</a> / </span> <span class="finish">{{ $productpage }}</span>
+        <span class="sep"> / <a href="{{route("products")}}">Продукция</a> / <a href="{{route('product_cat', $catslug)}}">{{$cattitle}}</a> / </span> <span class="finish">{{ $productpage }}</span>
     @endif
 
  </div>

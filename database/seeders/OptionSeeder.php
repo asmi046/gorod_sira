@@ -33,21 +33,28 @@ class OptionSeeder extends Seeder
                     "name" => "adress",
                     "type" => "plan",
                     'title' => 'Адрес',
-                    "value" => "Карла Маркса, 72 корпус 18",
+                    "value" => "Куроская область, г. Рыльск, ул Новая, д. 6",
                 ],
 
                 [
                     "name" => "phone",
                     "type" => "plan",
                     'title' => 'Телефон',
-                    "value" => "+7 (920) 710 25 55",
+                    "value" => "+7 (000) 000 00 00",
+                ],
+
+                [
+                    "name" => "organization",
+                    "type" => "plan",
+                    'title' => 'Оргнанизация',
+                    "value" => "Общество с ограниченной ответственностью  «НМ Ингредиенты»",
                 ],
 
                 [
                     "name" => "email",
                     "type" => "plan",
                     'title' => 'e-mail',
-                    "value" => "info@florida46.ru",
+                    "value" => "info@gorod-sira.ru",
                 ],
 
                 [

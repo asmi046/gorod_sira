@@ -35,7 +35,7 @@
         ])
 
 </head>
-<body class="site_body" id="global_app">
+<body class="site_body" id="global_app_">
     <header>
         <x-menu-puncts></x-menu-puncts>
 
@@ -54,5 +54,10 @@
 
 
     <x-footer :line="$no_footer_line"></x-footer>
+
+    @vite([
+        'public/js/map.js',
+    ])
+
 </body>
 </html>

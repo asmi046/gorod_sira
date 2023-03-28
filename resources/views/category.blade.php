@@ -1,8 +1,8 @@
 @extends('layouts.all', ['no_footer_line' => true])
 
 @php
-    $title = "Категория товара";
-    $description = "Категория товара";
+    $title = $catinfo["seo_title"];
+    $description = $catinfo["seo_description"];
 @endphp
 
 @section('title', $title)
@@ -13,11 +13,10 @@
 
     <section class="product_page_content">
         <div class="_container">
-            <div class="breadcrumbs">
-                <a href="#">Главная</a> / <a href="#">Продукция</a> / <span>Главная</span>
-            </div>
 
-            <h1 class="h1_pahe">Масло сливочное фасованное</h1>
+            <x-breadcrumbs :category="$catinfo['title']"></x-breadcrumbs>
+
+            <h1 class="h1_pahe">{{$catinfo["title"]}}</h1>
 
             <div class="cat_select_in_page">
                 @foreach ($categories as $item)

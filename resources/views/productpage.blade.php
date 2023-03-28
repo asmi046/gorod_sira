@@ -1,8 +1,8 @@
 @extends('layouts.all', ['no_footer_line' => true])
 
 @php
-    $title = "Страница товара";
-    $description = "Страница товара";
+    $title = $productinfo["seo_title"];
+    $description = $productinfo["seo_description"];
 @endphp
 
 @section('title', $title)
@@ -12,9 +12,7 @@
 
     <section class="product_page_content big_pd">
         <div class="_container">
-            <div class="breadcrumbs">
-                <a href="#">Главная</a> / <a href="#">Продукция</a> / <span>Главная</span>
-            </div>
+            <x-breadcrumbs :productpage="$productinfo['title']" :catslug="$catinfo['slug']" :cattitle="$catinfo['title']" ></x-breadcrumbs>
 
 
 
