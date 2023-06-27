@@ -20,9 +20,11 @@
                 <h2>{{$options["organization"]}}</h2>
                 <a href="tel:+74712540630" class="phone">{{$options["phone"]}}</a>
                 <a href="mailto:{{$options["email"]}}" class="mail">{{$options["email"]}}</a>
+                <a href="mailto:{{$options["email1"]}}" class="mail">{{$options["email1"]}}</a>
+                <a href="mailto:{{$options["email2"]}}" class="mail">{{$options["email2"]}}</a>
 
 
-                <a href="{{asset('files/AK Mansurovo.pdf')}}" class="ca_card">Скачать карточку контрагента: {{$options["organization"]}}</a>
+                <a target="_blank" href="{{asset('files/karta_kontragenta_vtb.pdf')}}" class="ca_card">Скачать карточку контрагента: {{$options["organization"]}}</a>
 
                 <h3>Адрес:</h3>
                 <p class="adress">{{$options["adress"]}}</p>

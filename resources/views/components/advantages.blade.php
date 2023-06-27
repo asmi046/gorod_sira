@@ -5,8 +5,8 @@
         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
         <div class="advantages_list">
 
-            <div class="adv">
-                <div class="icon_blk icon_adv_1"></div>
+            <div class="a_blk">
+                <div class="icon_blk icon_a_blk_1"></div>
                 <div class="text_blk">
                     <h3>Современное оборудование</h3>
                     <hr>
@@ -14,8 +14,8 @@
                 </div>
             </div>
 
-            <div class="adv">
-                <div class="icon_blk icon_adv_2"></div>
+            <div class="a_blk">
+                <div class="icon_blk icon_a_blk_2"></div>
                 <div class="text_blk">
                     <h3>Только <br/>лучшее сырье</h3>
                     <hr>
@@ -23,8 +23,8 @@
                 </div>
             </div>
 
-            <div class="adv">
-                <div class="icon_blk icon_adv_3"></div>
+            <div class="a_blk">
+                <div class="icon_blk icon_a_blk_3"></div>
                 <div class="text_blk">
                     <h3>Стандарты производства</h3>
                     <hr>
@@ -32,8 +32,8 @@
                 </div>
             </div>
 
-            <div class="adv">
-                <div class="icon_blk icon_adv_4"></div>
+            <div class="a_blk">
+                <div class="icon_blk icon_a_blk_4"></div>
                 <div class="text_blk">
                     <h3>Строгий <br>контроль качества</h3>
                     <hr>
@@ -41,8 +41,8 @@
                 </div>
             </div>
 
-            <div class="adv">
-                <div class="icon_blk icon_adv_5"></div>
+            <div class="a_blk">
+                <div class="icon_blk icon_a_blk_5"></div>
                 <div class="text_blk">
                     <h3>Доступность продукции</h3>
                     <hr>

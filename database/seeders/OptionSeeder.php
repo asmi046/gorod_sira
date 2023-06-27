@@ -30,6 +30,20 @@ class OptionSeeder extends Seeder
                 ],
 
                 [
+                    "name" => "about",
+                    "type" => "rich",
+                    'title' => 'О компании',
+                    "value" => file_get_contents(public_path('texts//about.html')),
+                ],
+
+                [
+                    "name" => "about_main",
+                    "type" => "rich",
+                    'title' => 'О компании (На главной)',
+                    "value" => file_get_contents(public_path('texts//about-main.html')),
+                ],
+
+                [
                     "name" => "adress",
                     "type" => "plan",
                     'title' => 'Адрес',
@@ -40,7 +54,7 @@ class OptionSeeder extends Seeder
                     "name" => "phone",
                     "type" => "plan",
                     'title' => 'Телефон',
-                    "value" => "+7 (000) 000 00 00",
+                    "value" => "+7 (47152)3-17-56",
                 ],
 
                 [
@@ -54,7 +68,21 @@ class OptionSeeder extends Seeder
                     "name" => "email",
                     "type" => "plan",
                     'title' => 'e-mail',
-                    "value" => "info@gorod-sira.ru",
+                    "value" => "rylsk-syr@yandex.ru",
+                ],
+
+                [
+                    "name" => "email1",
+                    "type" => "plan",
+                    'title' => 'e-mail (1)',
+                    "value" => "info@nm-rylsk.ru",
+                ],
+
+                [
+                    "name" => "email2",
+                    "type" => "plan",
+                    'title' => 'e-mail (2)',
+                    "value" => "info@gorod-syra.ru",
                 ],
 
                 [

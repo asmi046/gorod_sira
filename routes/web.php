@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductPageController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ProizvodstvoController;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,4 @@ Route::get('/products/{slug}', [ProductController::class, 'show_cat'])->name('pr
 Route::get('/product/{slug}', [ProductPageController::class, 'index'])->name('product_page');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/proizvodstvo', [ProizvodstvoController::class, 'index'])->name('proizvodstvo');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
