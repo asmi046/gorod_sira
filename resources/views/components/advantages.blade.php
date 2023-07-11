@@ -1,6 +1,6 @@
 <section class="advantages_main" id="advantages_main">
     <div class="_container">
-        <h2>Наш сыр это</h2>
+        <h2>Сыр</h2>
         <hr>
         <p>Бережно сохраненные традиции производства. <br/>Постоянный контроль качества и разработка новых рецептур.</p>
         <div class="advantages_list">

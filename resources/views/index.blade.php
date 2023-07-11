@@ -45,7 +45,7 @@
 
     <section class="proizvodstvo_main" id="proizvodstvo_main">
         <div class="_container">
-            <h2>Наше производство</h2>
+            <h2>Производство</h2>
             <x-proizvodstvo-photo></x-proizvodstvo-photo>
         </div>
     </section>

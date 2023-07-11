@@ -18,7 +18,7 @@
             <div class="text_blk margin_bottom_30">
                 {!! $options['about'] !!}
             </div>
-            <h2>Наше производство</h2>
+            <h2>Производство</h2>
             <x-proizvodstvo-photo></x-proizvodstvo-photo>
         </div>
     </section>
