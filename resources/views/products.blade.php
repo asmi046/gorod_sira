@@ -1,8 +1,8 @@
 @extends('layouts.all', ['no_footer_line' => true])
 
 @php
-    $title = "Производство сыра и молочьных продуктов";
-    $description = "Производство сыра и молочьных продуктов";
+    $title = "Производство сыра и молочных продуктов";
+    $description = "Производство сыра и молочных продуктов";
 @endphp
 
 @section('title', $title)
