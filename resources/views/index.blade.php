@@ -2,7 +2,7 @@
 @extends('layouts.all', ['no_footer_line' => false])
 
 @php
-    $title = "Производство сыра и ных продуктов";
+    $title = "Производство сыра и молочных продуктов";
     $description = "Производство сыра и молочных продуктов";
 @endphp
 
