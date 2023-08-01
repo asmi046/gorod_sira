@@ -318,6 +318,18 @@ header .contact_blk_head {
 
 .about_main ._container .photo_blk{
     width:40%;
+    min-height: 400px;
+    background-image: url(../img/about_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}
+
+.about_main ._container .photo_blk video{
+    width:80%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 9px rgba(34, 60, 80, 0.05);
+    margin: auto;
 }
 
 .about_main ._container .text_blk .inner_text{

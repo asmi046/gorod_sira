@@ -26,7 +26,7 @@
     <section class="about_main" id="about_main">
         <div class="_container">
             <div class="photo_blk">
-                <img src="{{asset('img/about_bg.jpg')}}" alt="">
+                <video autoplay muted autoplay src="{{asset('video/gorod-sira-video-present.mp4')}}"></video>
             </div>
 
             <div class="text_blk">
