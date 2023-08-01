@@ -26,7 +26,7 @@
     <section class="about_main" id="about_main">
         <div class="_container">
             <div class="photo_blk">
-                <video autoplay muted autoplay poster="{{asset('img/v-prev.jpg')}}" src="{{asset('video/gorod-sira-video-present.mp4')}}"></video>
+                <video autoplay muted autoplay poster="{{asset('img/v-prv.jpg')}}" src="{{asset('video/gorod-sira-video-present.mp4')}}"></video>
             </div>
 
             <div class="text_blk">
