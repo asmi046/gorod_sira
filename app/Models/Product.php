@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+use Orchid\Filters\Filterable;
+
 use Illuminate\Support\Str;
 
 use Orchid\Screen\AsSource;
@@ -13,6 +15,7 @@ class Product extends Model
 {
     use HasFactory;
     use AsSource;
+    use Filterable;
 
     public $fillable = [
             'sku',
@@ -45,6 +48,16 @@ class Product extends Model
 
             'seo_title',
             'seo_description',
+    ];
+
+    protected $allowedSorts = [
+        'id',
+        'sku',
+        'title'
+    ];
+
+    protected $allowedFilters  = [
+        'title'
     ];
 
     public function product_category() {

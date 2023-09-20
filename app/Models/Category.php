@@ -37,4 +37,12 @@ class Category extends Model
         else
             $this->attributes['slug'] =  $value;
     }
+
+    public function setNameAttribute($value)
+    {
+        if (empty($value))
+            $this->attributes['name'] =  $this->title;
+        else
+            $this->attributes['name'] =  $value;
+    }
 }
