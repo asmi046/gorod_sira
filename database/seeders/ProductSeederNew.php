@@ -30,13 +30,14 @@ class ProductSeederNew extends Seeder
         $i = 1;
         foreach ($main_data as $item) {
 
-            // if (!empty($item["img"]))
-            //     Storage::disk('public')->put($item["img"], file_get_contents(public_path('base/tovar_foto_new/'.$item["img"])), 'public');
+            if (!empty($item["img"]))
+                Storage::disk('public')->put($item["img"], file_get_contents(public_path('base/tovar_foto_new/'.$item["img"])), 'public');
 
             if (!isset($item["sku"])) continue;
 
             $item["sku"] = "tov_".$i;
 
+            $item["img"] = (!empty($item["img"]))?Storage::url($item["img"]):"";
             $item["slug"] = Str::slug($item["title"].'-'.$item["sku"]);
             $item['price_D_ht'] = 0;
             $item['price_D_kg'] = 0;
