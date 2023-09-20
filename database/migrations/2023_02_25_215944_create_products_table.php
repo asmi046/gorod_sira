@@ -23,25 +23,26 @@ return new class extends Migration
             $table->string('upacovka')->comment('Вид упаковки');
             $table->string('quote')->nullable();
 
-            $table->string('param_zgirnost')->comment('Жирность (параметр)');
-            $table->string('param_scode')->comment('Штрихкод (параметр)');
-            $table->string('param_ves_ed')->comment('Вес единицы продукции (параметр)');
-            $table->string('param_ves_yashik')->comment('Вес ящика продукции (параметр)');
-            $table->string('param_count_in_pack')->comment('Количество в упаковке (параметр)');
-            $table->string('param_srok_realiz')->comment('Срок реализации (параметр)');
+            $table->string('param_zgirnost')->nullable()->comment('Жирность (параметр)');
+            $table->string('param_scode')->nullable()->comment('Штрихкод (параметр)');
+            $table->string('param_ves_ed')->nullable()->comment('Вес единицы продукции (параметр)');
+            $table->string('param_ves_yashik')->nullable()->comment('Вес ящика продукции (параметр)');
+            $table->string('param_count_in_pack')->nullable()->comment('Количество в упаковке (параметр)');
+            $table->string('param_srok_realiz')->nullable()->comment('Срок реализации (параметр)');
 
             $table->string('category')->comment('Категория');
-            $table->string('img')->comment('Изображение');
+            $table->string('category_sub')->comment('Категория 2');
+            $table->string('img')->nullable()->comment('Изображение');
             $table->text('description')->comment('Описание');
 
-            $table->float("price_D_ht")->comment('Цена дистрибютер за штуку');
-            $table->float("price_D_kg")->comment('Цена дистрибютер за кг');
+            $table->float("price_D_ht")->nullable()->comment('Цена дистрибютер за штуку');
+            $table->float("price_D_kg")->nullable()->comment('Цена дистрибютер за кг');
 
-            $table->float("price_OPT_ht")->comment('Цена опт за штуку');
-            $table->float("price_OPT_kg")->comment('Цена опт за кг');
+            $table->float("price_OPT_ht")->nullable()->comment('Цена опт за штуку');
+            $table->float("price_OPT_kg")->nullable()->comment('Цена опт за кг');
 
-            $table->float("price_R_ht")->comment('Цена розница за штуку');
-            $table->float("price_R_kg")->comment('Цена розница за кг');
+            $table->float("price_R_ht")->nullable()->comment('Цена розница за штуку');
+            $table->float("price_R_kg")->nullable()->comment('Цена розница за кг');
 
             $table->string('seo_title')->nullable();
             $table->text('seo_description')->nullable();

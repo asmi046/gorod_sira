@@ -30,6 +30,7 @@ class Product extends Model
             'param_srok_realiz',
 
             'category',
+            'category_sub',
             'img',
             'description',
 
