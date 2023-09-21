@@ -28,7 +28,7 @@
         "cache_clear": "ssh u1793217@31.31.198.62 \"cd www/gorod-syra.ru && /opt/php/8.1/bin/php artisan cache:clear\"",
         "optimize": "ssh u1793217@31.31.198.62 \"cd www/gorod-syra.ru && /opt/php/8.1/bin/php artisan optimize\"",
         "optimize_all": "npm run optimize && npm run cache_clear && npm run cache_view && npm run cache_route && npm run cache_config",
-        "orchid_user": "ssh u1793217@31.31.198.62 \"cd www/gorod-syra.ru && /opt/php/8.1/bin/php artisan orchid:admin admin asmi046@gmail.com 123 \"",
+        "orchid_user": "ssh u1793217@31.31.198.62 \"cd www/gorod-syra.ru && /opt/php/8.1/bin/php artisan orchid:admin admin asmi046@gmail.com sdfsdf#2__ \"",
         "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all"
     },
     "devDependencies": {

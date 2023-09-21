@@ -1,0 +1,48 @@
+.mobile_menu {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: white;
+    top:80px;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    transition: transform 0.4s ease-in-out;
+}
+
+.mobile_menu .subcontacts_blk{
+    margin: 40px 20px;
+}
+
+.mobile_menu .mobMenuWrappe{
+    margin: 0 20px;
+}
+
+.mobile_menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.mobile_menu ul li a{
+    margin-right: 0;
+}
+
+.mobile_menu ul li{
+    margin-bottom: 20px;
+
+}
+
+.mobile_menu.open {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 680px) {
+    .mobile_menu  {
+        top: 80px;
+        height: calc(100% - 80px);
+    }
+}

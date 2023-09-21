@@ -11,7 +11,9 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'public/js/map.js',
-                'public/css/style.css'
+                'public/css/style.css',
+                'public/js/mobile-menu.js',
+                'public/css/mobile_catalog_menu.css'
             ],
             refresh: true,
         }),

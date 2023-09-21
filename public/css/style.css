@@ -253,7 +253,7 @@ header .contact_blk_head {
     font-size: 24px;
     position: absolute;
     left:0;
-    top:0;
+    top:-1px;
     line-height: 0.75;
 }
 
@@ -949,6 +949,7 @@ footer ._container {
     header .main_menu {
         order: 2;
     }
+
     header .logo {
         order: 1;
         position: relative;
@@ -957,8 +958,8 @@ footer ._container {
         height:84%;
         background-size: contain;
         background-repeat:  no-repeat;
-
     }
+
     header .contact_blk_head {
         order:3;
     }
@@ -1077,6 +1078,18 @@ footer ._container {
     .bn_in_product_page {
         height: 120px;
     }
+
+    .prodct_page_blk .right h1 {
+        margin-top: 40px;
+    }
+
+    .big_pd {
+        padding-top: 30px;
+    }
+
+    .advantages_list .a_blk {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px){
@@ -1121,5 +1134,14 @@ footer ._container {
     .product_cat_list .product_cat_t .upac,
     .product_cat_list .product_cat_t h2 {
         padding: 0 20px;
+    }
+
+
+}
+
+@media (max-width: 375px){
+    header .logo {
+        width:70px;
+        background-position: center;
     }
 }

@@ -31,11 +31,14 @@
         @vite([
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'public/css/style.css'
+                'public/js/mobile-menu.js',
+                'public/css/style.css',
+                'public/css/mobile_catalog_menu.css'
         ])
 
 </head>
 <body class="site_body" id="global_app_">
+    <x-mobile-menu></x-mobile-menu>
     <header>
         <x-menu-puncts></x-menu-puncts>
 
@@ -43,7 +46,7 @@
 
         <x-phone></x-phone>
 
-        <div class="icon-menu">
+        <div id="burger_element" class="icon-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -51,7 +54,6 @@
     </header>
 
     @yield('content')
-
 
     <x-footer :line="$no_footer_line"></x-footer>
 
