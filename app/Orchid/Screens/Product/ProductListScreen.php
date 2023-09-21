@@ -23,7 +23,7 @@ class ProductListScreen extends Screen
     public function query(): iterable
     {
         return [
-            "products" => Product::filters()->defaultSort('id')->orderByDesc("created_at")->paginate(15)
+            "products" => Product::filters()->defaultSort('created_at', 'desc')->orderBy("created_at")->paginate(15)
         ];
     }
 

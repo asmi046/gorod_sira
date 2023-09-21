@@ -42,18 +42,17 @@ class ProductListTable extends Table
                 }
             ),
             TD::make('sku', 'Артикул')->sort(),
-            TD::make('title', 'Заголовок')->sort()->filter(TD::FILTER_TEXT),
-            TD::make('slug', 'Ссылка'),
-            TD::make('description', 'Описание')->render(function($element) {
-                return  mb_strimwidth(strip_tags($element->description), 0, 30, "...");
-            }),
+            TD::make('created_at', 'Создан')->sort()->render(function($element) {
+                    if (empty($element->created_at)) return "";
+                    return  date("d.m.Y H:i",strtotime($element->created_at));
+                }),
 
-            // TD::make('action', 'Действие')->render(function($element) {
-            //     return  Group::make([
-            //         Link::make('Редактировать')->route('platform.product_edit',$element->id),
-            //         Button::make('Удалить')->method('delete_field', [$element->id])->type(Color::DANGER())
-            //     ]);
-            // })
+            TD::make('title', 'Заголовок')->sort()->filter(TD::FILTER_TEXT),
+
+            // TD::make('slug', 'Ссылка'),
+            // TD::make('description', 'Описание')->render(function($element) {
+            //     return  mb_strimwidth(strip_tags($element->description), 0, 30, "...");
+            // }),
 
             TD::make(__('Actions'))
             ->align(TD::ALIGN_CENTER)

@@ -48,12 +48,14 @@ class Product extends Model
 
             'seo_title',
             'seo_description',
+            'created_at'
     ];
 
     protected $allowedSorts = [
         'id',
         'sku',
-        'title'
+        'title',
+        'created_at'
     ];
 
     protected $allowedFilters  = [

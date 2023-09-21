@@ -31,7 +31,7 @@
 
             <div class="text_blk">
                 <div class="inner_text">
-                    <h2>О нашей компании</h2>
+                    <h2>О компании</h2>
                     <div class="plain_text">
                         {!! $options['about_main'] !!}
                     </div>
