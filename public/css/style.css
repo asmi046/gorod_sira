@@ -704,6 +704,15 @@ footer ._container {
 
 .prodct_page_blk .right h1{
     font-size: 40px;
+    margin-top: 0;
+}
+
+.prodct_page_blk .right ul li{
+    margin: 5px 0;
+}
+
+.prodct_page_blk .right h2{
+    font-size: 22px;
 }
 
 .prodct_page_blk .right .description{

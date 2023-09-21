@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>@yield('title') - Mini India</title>
+        <title>@yield('title') - Город сыра</title>
         <meta name="description" content="@yield('description')">
 
         <meta property="og:locale" content="ru_RU" />
@@ -12,7 +12,7 @@
         <meta property="og:title" content="@yield('title')" />
         <meta property="og:description" content="@yield('description')" />
         <meta property="og:url" content="{{url()->current()}}" />
-        <meta property="og:site_name" content="Магазин индийских товаров - Mini India" />
+        <meta property="og:site_name" content="Молочная продукция - Город сыра" />
         <meta property="og:image" content="{{asset('img/og_img.jpg')}}" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta name="twitter:card" content="summary_large_image" />

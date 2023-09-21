@@ -39,6 +39,9 @@ class ProductSeederNew extends Seeder
 
             $item["img"] = (!empty($item["img"]))?Storage::url($item["img"]):"";
             $item["slug"] = Str::slug($item["title"].'-'.$item["sku"]);
+            $item['seo_title'] = "Заказать: ". $item["title"];
+            $item['seo_description'] = $item["title"] . " - заказать от производителя. Торговая марка: ".$item["tm"].". Натуральный состав. Гарантия высокого качества.";
+
             $item['price_D_ht'] = 0;
             $item['price_D_kg'] = 0;
 

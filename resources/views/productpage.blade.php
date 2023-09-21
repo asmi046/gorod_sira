@@ -25,11 +25,19 @@
 
                 <div class="pp_blk right">
                     <h1 class="h1_pahe">{{$productinfo->title}}</h1>
+                    <h2>Характеристики:</h2>
                     <ul class="property">
-                        <li>— {{$productinfo->upacovka}} {{$productinfo->param_ves_ed}} г</li>
+                        <li>— Упаковка: {{$productinfo->upacovka}}</li>
+                        @if($productinfo->param_ves_ed) <li>— Вес: {{$productinfo->param_ves_ed}}</li> @endif
+                        @if($productinfo->param_zgirnost) <li>— Жирность: {{$productinfo->param_zgirnost}}</li>@endif
+                        @if($productinfo->param_scode) <li>— Штрихкод: {{$productinfo->param_scode}}</li>@endif
+                        @if($productinfo->param_ves_yashik) <li>— Вес ящика: {{$productinfo->param_ves_yashik}}</li>@endif
+                        @if($productinfo->param_count_in_pack) <li>— Количество в ящике: {{$productinfo->param_count_in_pack}}</li>@endif
+                        @if($productinfo->param_srok_realiz) <li>— Срок реализации: {{$productinfo->param_srok_realiz}}</li>@endif
                     </ul>
 
                     <p class="description">
+                        <h2>Состав:</h2>
                         {{$productinfo->description}}
                     </p>
 
