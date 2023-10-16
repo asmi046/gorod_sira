@@ -4,7 +4,7 @@
     </div>
     <h2>{{$item->title}}</h2>
     <div class="upac">
-        — {{$item->upacovka}} {{$item->param_ves_ed}} г
+        — {{$item->upacovka}} {{$item->param_ves_ed}}
     </div>
     <div class="text">
         {{$item->quote }}
