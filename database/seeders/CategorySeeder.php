@@ -37,12 +37,12 @@ class CategorySeeder extends Seeder
 
             [
                 "name" => 'Масло',
-                "img" => ""
+                "img" => "krestyanskoye_250.jpg"
             ],
 
             [
                 "name" => 'Плавленный сыр',
-                "img" => ""
+                "img" => "plavleny_druzgba.jpg"
             ],
         ];
 

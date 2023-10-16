@@ -36,7 +36,7 @@ class ProductSeeder extends Seeder
 
                     $cat_name = trim(iconv("windows-1251", "utf-8", $data[0]));
 
-                    $main_data[] =
+                    $main_data =
                         [
 
                             'sku' => trim(iconv("windows-1251", "utf-8", $data[1]))."-".$row,
@@ -70,11 +70,26 @@ class ProductSeeder extends Seeder
                             'seo_description' => trim(iconv("windows-1251", "utf-8", $data[0]))." - ".trim(iconv("windows-1251", "utf-8", $data[2])),
                         ];
 
+                        if (($main_data['title'] === "Масло Крестьянское 72")&&($main_data['param_ves_ed'] === "250 гр.")) {
+                            Storage::disk('public')->put("krestyanskoye_250.jpg", file_get_contents(public_path('base/tovar_foto_dop/krestyanskoye_250.jpg')), 'public');
+
+                            $main_data['img'] = Storage::url("krestyanskoye_250.jpg");
+                        }
+                        if (($main_data['title'] === "Масло Крестьянское 72")&&($main_data['param_ves_ed'] === "500 гр.")) {
+                            Storage::disk('public')->put("krestyanskoye_500.jpg", file_get_contents(public_path('base/tovar_foto_dop/krestyanskoye_500.jpg')), 'public');
+                            $main_data['img'] = Storage::url("krestyanskoye_500.jpg");
+                        }
+                        if (($main_data['title'] === "Масло Крестьянское 72")&&($main_data['param_ves_ed'] === "1000 гр.")) {
+                            Storage::disk('public')->put("krestyanskoye_1000.jpg", file_get_contents(public_path('base/tovar_foto_dop/krestyanskoye_1000.jpg')), 'public');
+                            $main_data['img'] = Storage::url("krestyanskoye_1000.jpg");
+                        }
+
+
+                        DB::table("products")->insert($main_data);
+
                         $row++;
                 }
 
-                // var_dump($main_data);
-                DB::table("products")->insert($main_data);
             }
     }
 }
