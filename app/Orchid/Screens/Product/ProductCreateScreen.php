@@ -122,7 +122,6 @@ class ProductCreateScreen extends Screen
                 Input::make('category_sub')
                     ->title('Подкатегория товара')
                     ->help('Подкатегория товара')
-                    ->required()
                     ->horizontal(),
 
                 Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
