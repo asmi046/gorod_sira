@@ -137,7 +137,6 @@ class ProductEditScreen extends Screen
                     ->title('Подкатегория товара')
                     ->value($this->product->category_sub)
                     ->help('Подкатегория товара')
-                    ->required()
                     ->horizontal(),
 
                 Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
@@ -231,7 +230,7 @@ class ProductEditScreen extends Screen
             'param_srok_realiz' => [],
 
             'category' => ['required', 'string'],
-            'category_sub' => ['required', 'string'],
+            'category_sub' => [],
             'img' => [],
             'description' => ['required', 'string'],
 

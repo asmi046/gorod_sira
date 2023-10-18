@@ -205,7 +205,7 @@ class ProductCreateScreen extends Screen
             'param_srok_realiz' => [],
 
             'category' => ['required', 'string'],
-            'category_sub' => ['required', 'string'],
+            'category_sub' => [],
             'img' => [],
             'description' => ['required', 'string'],
 

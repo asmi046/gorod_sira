@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('param_srok_realiz')->nullable()->comment('Срок реализации (параметр)');
 
             $table->string('category')->comment('Категория');
-            $table->string('category_sub')->comment('Категория 2');
+            $table->string('category_sub')->nullable()->comment('Категория 2');
             $table->string('img')->nullable()->comment('Изображение');
             $table->text('description')->comment('Описание');
 

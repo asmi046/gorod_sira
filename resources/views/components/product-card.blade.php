@@ -7,6 +7,6 @@
         — {{$item->upacovka}} {{$item->param_ves_ed}}
     </div>
     <div class="text">
-        {{$item->quote }}
+        {!!$item->quote !!}
     </div>
 </a>

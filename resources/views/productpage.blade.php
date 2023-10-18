@@ -38,7 +38,7 @@
 
                     <p class="description">
                         <h2>Состав:</h2>
-                        {{$productinfo->description}}
+                        {!!$productinfo->description!!}
                     </p>
 
                     <div class="ppInfo">
