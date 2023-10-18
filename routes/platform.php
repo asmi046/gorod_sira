@@ -26,6 +26,9 @@ use App\Orchid\Screens\Product\ProductCreateScreen;
 use App\Orchid\Screens\Product\ProductEditScreen;
 use App\Orchid\Screens\Product\ProductListScreen;
 
+use App\Orchid\Screens\Options\OptionsList;
+use App\Orchid\Screens\Options\EditOptions;
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
@@ -69,6 +72,20 @@ Route::screen('/products/create', ProductCreateScreen::class)
     ->name('platform.product_create')->breadcrumbs(fn (Trail $trail) => $trail
     ->parent('platform.product')
     ->push(__('Добавление товара'), route('platform.product_create')));
+
+
+// Опции
+Route::screen('/options', OptionsList::class)
+    ->name('platform.options')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push(__('Опции'), route("platform.options")));
+
+Route::screen('/options/{id}/edit', EditOptions::class)
+    ->name('platform.options_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
+    ->parent('platform.options')
+    ->push(__('Редактирование опции'), route('platform.options_edit', $id)));
+
 
 
 // Main
