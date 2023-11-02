@@ -63,7 +63,7 @@ class Product extends Model
     ];
 
     public function product_category() {
-        return $this->hasOne(Category::class, "name", "category");
+        return $this->hasOne(Category::class, "title", "category");
     }
 
     public function setSlugAttribute($value)
