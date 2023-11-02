@@ -61,7 +61,8 @@ class Product extends Model
     ];
 
     protected $allowedFilters  = [
-        'title'
+        'title',
+        'category',
     ];
 
     public function product_category() {

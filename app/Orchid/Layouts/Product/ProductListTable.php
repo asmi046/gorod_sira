@@ -42,10 +42,7 @@ class ProductListTable extends Table
                 }
             ),
             TD::make('sku', 'Артикул')->sort(),
-            TD::make('created_at', 'Создан')->sort()->render(function($element) {
-                    if (empty($element->created_at)) return "";
-                    return  date("d.m.Y H:i",strtotime($element->created_at));
-                }),
+            TD::make('category', 'Категория')->filter(TD::FILTER_TEXT),
 
 
 
