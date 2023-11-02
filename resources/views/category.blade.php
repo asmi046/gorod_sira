@@ -27,7 +27,7 @@
             </div>
 
             <div class="product_cat_list">
-                @foreach ($catinfo->cat_product as $item)
+                @foreach ($catinfo->cat_product()->orderBy('order')->get() as $item)
                     <x-product-card :item="$item"></x-product-card>
                 @endforeach
 
