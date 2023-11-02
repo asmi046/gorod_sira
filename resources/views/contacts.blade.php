@@ -18,8 +18,8 @@
 
             <div class="contact_data">
                 <h2>{{$options["organization"]}}</h2>
-                <a href="tel:{{$options["phone"]}}" class="phone">{{$options["phone"]}}</a>
-                <span><a href="tel:{{$options["phone_op"]}}" class="phone_op">{{$options["phone_op"]}}</a> - отдел продаж</span>
+                <a href="tel:{{str_replace([' ', '-', ')', '('], "",$options["phone"])}}" class="phone">{{$options["phone"]}}</a>
+                <span><a href="tel:{{str_replace([' ', '-', ')', '('], "",$options["phone_op"])}}" class="phone_op">{{$options["phone_op"]}}</a> - отдел продаж</span>
                 {{-- <a href="mailto:{{$options["email"]}}" class="mail">{{$options["email"]}}</a> --}}
                 <a href="mailto:{{$options["email1"]}}" class="mail">{{$options["email1"]}}</a>
                 <a href="mailto:{{$options["email2"]}}" class="mail">{{$options["email2"]}}</a>
