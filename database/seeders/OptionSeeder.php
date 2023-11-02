@@ -58,6 +58,13 @@ class OptionSeeder extends Seeder
                 ],
 
                 [
+                    "name" => "phone_op",
+                    "type" => "plan",
+                    'title' => 'Телефон отдела продаж',
+                    "value" => "+7 (47152) 3-17-86",
+                ],
+
+                [
                     "name" => "organization",
                     "type" => "plan",
                     'title' => 'Оргнанизация',
