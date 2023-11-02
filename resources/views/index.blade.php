@@ -16,7 +16,6 @@
         <div class="_container">
             <span>Качественная молочная продукция</span>
             <h1>
-
                 Город Сыра
             </h1>
             <a href="" class="btn">Каталог</a>
@@ -26,7 +25,7 @@
     <section class="about_main" id="about_main">
         <div class="_container">
             <div class="photo_blk">
-                <video controls  autoplay poster="{{asset('img/v-prv.jpg')}}" src="{{asset('video/gorod-sira-video-present.mp4')}}"></video>
+                <video controls autoplay poster="{{asset('img/v-prv.jpg')}}" src="{{asset('video/gorod-sira-video-present.mp4')}}"></video>
             </div>
 
             <div class="text_blk">

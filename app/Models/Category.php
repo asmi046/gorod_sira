@@ -27,7 +27,7 @@ class Category extends Model
     ];
 
     public function cat_product() {
-        return $this->hasMany(Product::class, "category", "name");
+        return $this->hasMany(Product::class, "category", "title");
     }
 
 
