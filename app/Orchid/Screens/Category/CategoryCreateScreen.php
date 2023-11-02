@@ -74,6 +74,12 @@ class CategoryCreateScreen extends Screen
                     ->help('Slug категории')
                     ->horizontal(),
 
+                Input::make('order')
+                    ->type('number')
+                    ->title('Порядок сортировки')
+                    ->help('Порядок сортировки при выводе на сайт')
+                    ->horizontal(),
+
                 Picture::make('img')->title('Загрузить основное изображение записи')->storage('public')->targetRelativeUrl(),
 
 

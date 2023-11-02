@@ -47,7 +47,11 @@ class ProductListTable extends Table
                     return  date("d.m.Y H:i",strtotime($element->created_at));
                 }),
 
-            TD::make('title', 'Заголовок')->sort()->filter(TD::FILTER_TEXT),
+
+
+            TD::make('title', 'Заголовок')->sort()->width("50%")->filter(TD::FILTER_TEXT),
+
+            TD::make('order', 'Порядок')->sort(),
 
             // TD::make('slug', 'Ссылка'),
             // TD::make('description', 'Описание')->render(function($element) {

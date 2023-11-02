@@ -24,6 +24,7 @@ class Product extends Model
             'tm',
             'upacovka',
             'quote',
+            'order',
 
             'param_zgirnost',
             'param_scode',
@@ -55,6 +56,7 @@ class Product extends Model
         'id',
         'sku',
         'title',
+        'order',
         'created_at'
     ];
 

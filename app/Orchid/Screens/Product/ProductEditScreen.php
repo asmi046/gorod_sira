@@ -139,6 +139,14 @@ class ProductEditScreen extends Screen
                     ->help('Подкатегория товара')
                     ->horizontal(),
 
+                Input::make('order')
+                    ->type('number')
+                    ->title('Порядок сортировки')
+                    ->value($this->product->order)
+                    ->help('Порядок сортировки при выводе в категории')
+                    ->horizontal(),
+
+
                 Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
             ])->title('Категория товара'),
 
@@ -221,6 +229,7 @@ class ProductEditScreen extends Screen
             'tm' => ['required', 'string'],
             'upacovka' => ['required', 'string'],
             'quote' => [],
+            'order' => [],
 
             'param_zgirnost' => [],
             'param_scode' => [],
