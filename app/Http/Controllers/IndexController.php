@@ -9,7 +9,7 @@ use App\Models\Category;
 class IndexController extends Controller
 {
     public function index() {
-        $all_cat = Category::inRandomOrder()->take(4)->get();
+        $all_cat = Category::orderBy('order', 'asc')->get();
 
         return view('index', ['categories' => $all_cat]);
     }

@@ -43,6 +43,7 @@ class CategoryListTable extends Table
             ),
             TD::make('title', 'Заголовок'),
             TD::make('slug', 'Ссылка'),
+            TD::make('order', 'Порядок'),
             TD::make('description', 'Описание')->render(function($element) {
                 return  mb_strimwidth(strip_tags($element->description), 0, 30, "...");
             }),

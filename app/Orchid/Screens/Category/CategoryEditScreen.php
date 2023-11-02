@@ -66,7 +66,7 @@ class CategoryEditScreen extends Screen
         return [
             Layout::rows([
 
-                Input::make('name')->type('hidden'),
+                Input::make('name')->value("")->type('hidden'),
 
                 Input::make('title')
                     ->title('Заголовок')
@@ -79,6 +79,13 @@ class CategoryEditScreen extends Screen
                     ->title('Окончание ссылки')
                     ->value($this->category->slug)
                     ->help('Slug категории')
+                    ->horizontal(),
+
+                Input::make('order')
+                    ->type('number')
+                    ->title('Порядок сортировки')
+                    ->value($this->category->order)
+                    ->help('Порядок сортировки при выводе на сайт')
                     ->horizontal(),
 
                 Picture::make('img')->title('Загрузить основное изображение записи')->storage('public')->targetRelativeUrl()->value($this->category->img),
@@ -114,6 +121,7 @@ class CategoryEditScreen extends Screen
             'slug' => [],
             'description' => [],
             'img' => [],
+            'order' => [],
             'quote' => [],
             'seo_title' => [],
             'seo_description' => []

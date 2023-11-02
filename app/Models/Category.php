@@ -20,6 +20,7 @@ class Category extends Model
         'slug',
         'img',
         'quote',
+        'order',
         'description',
         'seo_title',
         'seo_description',

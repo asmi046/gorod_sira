@@ -61,7 +61,7 @@ class CategoryCreateScreen extends Screen
         return [
             Layout::rows([
 
-                Input::make('name')->type('hidden'),
+                Input::make('name')->value("")->type('hidden'),
 
                 Input::make('title')
                     ->title('Заголовок')
@@ -106,6 +106,7 @@ class CategoryCreateScreen extends Screen
             'slug' => [],
             'description' => [],
             'img' => [],
+            'order' => [],
             'quote' => [],
             'seo_title' => [],
             'seo_description' => [],
