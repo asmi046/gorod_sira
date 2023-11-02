@@ -51,6 +51,9 @@ class ProductListTable extends Table
 
             TD::make('title', 'Заголовок')->sort()->width("50%")->filter(TD::FILTER_TEXT),
 
+            TD::make('pack', 'Упаковка')->render(function($element) {
+                return  $element->upacovka." ".$element->param_ves_ed;
+            }),
             TD::make('order', 'Порядок')->sort(),
 
             // TD::make('slug', 'Ссылка'),
